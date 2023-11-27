@@ -1,0 +1,18 @@
+
+<blockquote>
+  <p>
+    <% if params[:question].blank? %>
+      😶
+    <% else %>
+      <%= params[:question] %>
+    <% end %>
+  </p>
+  <cite>You</cite>
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @response %></p>
+  <cite>Your coach</cite>
+</blockquote>
+
+<%= link_to "Ask a new question", ask_path %>
